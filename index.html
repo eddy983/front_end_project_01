@@ -1,27 +1,46 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>My First Project</title>
+		<title>My First Projet</title>
 
 		<style type="text/css">
-
 			body{
-				margin: 0px;
+				margin: 0;
 			}
+
 			header{
-				display: flex;
-				justify-content: space-around;
-				text-align: center;
-				align-content: center;
-				align-items: center;
+				
 				margin-bottom: 20px;
-				background: #EEE;
+				background: #EEEEEE;
 				padding: 10px;
 			}
 
-			main{
-				margin-bottom: 50px;
-				padding: 0 20px 0 20px;
+			.navigation{
+				display: flex;
+				justify-content: space-between;
+				text-align: center;
+				align-content: center;
+				align-items: center;
+			}
+
+			.navigation__list{
+				list-style-type: none;
+			}
+
+			.navigation__list li{
+				display: inline-block;
+				padding: 0 15px;
+			}
+
+			.navigation__list a{
+				color: #a041f4;
+				text-decoration: none;
+				transition: 1s all ease;
+			}
+
+			.navigation__list a:hover{
+				letter-spacing: 1.1px;
+				color: #ff0000;
 			}
 
 			a{
@@ -36,6 +55,11 @@
 				text-align: justify;
 			}
 
+			main{
+				margin-bottom: 50px;
+				padding: 0 20px 0 20px;
+			}
+
 			footer{
 				display: flex;
 				justify-content: space-evenly;
@@ -47,37 +71,151 @@
 	</head>
 	<body>
 
+
 		<header>
-			<a>Home</a>
-			<a>About</a>
-			<a>Projects</a>
-			<a>Photos</a>
+			<nav class="navigation">
+				<!-- left side of nav -->
+				<div class="navigation__left">
+					<img src="https://app.evrybo.com/public/assets/logo-l.png" />
+				</div>
+
+				<!-- right side of nav -->
+				<div class="navigation__right">
+					<!-- An unorder list right here -->
+					<ul class="navigation__list">
+						<li>
+							<a href="https://www.google.com.ng/?gfe_rd=cr&dcr=0&ei=MaZgWqugOYiEaJGZv4AK" target="_blank">Home</a>
+						</li>
+						<li>
+							<a href="#">About</a>
+						</li>
+						<li>
+							<a href="#">Projects</a>
+						</li>
+						<li>
+							<a href="#">Photos</a>
+						</li>
+					</ul>
+				</div>
+
+			</nav>
 		</header>
 
 		<main>
-			<h1>Page Title</h1>
-			<P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
 
-			<h1>Page Title</h1>
-			<P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
+			<section>
+				<h1 title="Page title">Page Title</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<p>
+			</section>
 
-			<h1>Page Title</h1>
-			<P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
+			<section>
+				<h1>Page Title1</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<p>
+
+				<aside>
+					
+				</aside>
+			</section>
+
+			<section>
+				<h1>Page Title2</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<p>
+			</section>
+			<section>
+				<h1>Page Title3</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<p>
+			</section>
+
+			<!-- list items -->
+			<section>
+				<ul>
+					<li>
+						Food
+						<ul>
+							<li>Amala</li>
+							<li>Semo</li>
+							<li>Eba</li>
+						</ul>
+
+					</li>
+					<li>
+						Music
+						<ul>
+							<li>RnB</li>
+							<li>Hip pop</li>
+							<li>Soul</li>
+						</ul>
+					</li>
+					<li>
+						Sport
+						<ul>
+							<li>Football</li>
+							<li>Swimming</li>
+							<li>Tennis</li>
+						</ul>
+					</li>
+				</ul>
+
+				<ol>
+					<li>
+						Hobbies
+						<ol type="i">
+							<li>music</li>
+							<li>touring</li>
+							<li>swimming</li>
+						</ol>
+					</li>
+					<li>
+						Places
+						<ol type="i">
+							<li>Kogi</li>
+							<li>Abuja</li>
+							<li>Germany</li>
+						</ol>
+					</li>
+					<li>
+						Careers
+						<ol type="i">
+							<li>IT</li>
+							<li>Accounting</li>
+							<li>Photography</li>
+						</ol>
+					</li>
+				</ol>
+
+				<!--  -->
+				<dl>
+					<dt>River</dt>
+					<dd>A river is body of water</dd>
+					<dt>Computer</dt>
+					<dd>A computer is a device ....</dd>
+				</dl>
+			</section>
+
+			<!-- section for inputs-->
+			<section>
+				<input type="submit" value="click me" />
+			</section>
 			
 		</main>
 
